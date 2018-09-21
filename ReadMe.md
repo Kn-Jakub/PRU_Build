@@ -3,6 +3,8 @@
 
 This project explains compiling the **C code** and build runable application for **PRU**(Programable Realtime Unit) that is part of BeagleBone black processor. It contains all parts libraries, includes directories and compilator for PRU development. It is able to download Lite version for compiling on the embedded device (Beaglebone) or download the full version with main libraries for programing and compiling on the personal computer.
 
+Complementary project for FleX-d (https://github.com/FleX-d)
+
 ## Directories TREE for build runable program for PRU
 
 It is necessary to order files and directories in your computer into following tree.
@@ -38,9 +40,9 @@ In the project are two main branches:
         git clone https://github.com/Kn-Jakub/PRU_Build.git
 2.  Switch between branches ('Lite'/'Full')
 
-        git checkout Lite
+        git checkout -b Lite
         or
-        git checkout Full
+        git checkout -b Full
 Now is computer prepared for compiling test PRU project. The example code is in *pru_code/* folder. All code information are writing in *main.c* file.
 
 **NOTE:** If it is needed some else libreries/includes for compiling project, the files can be added:
