@@ -1,7 +1,9 @@
 
-# Compiling and building C-application for PRU (FleX-d) *Lite branche*
+# Compiling and building C-application for PRU (FleX-d) *Full branche*
 
 This project explains compiling the **C code** and build runable application for **PRU**(Programable Realtime Unit) that is part of BeagleBone black processor. It contains all parts libraries, includes directories and compilator for PRU development. It is able to download Lite version for compiling on the embedded device (Beaglebone) or download the full version with main libraries for programing and compiling on the personal computer.
+
+Complementary project for FleX-d (https://github.com/FleX-d)
 
 ## Directories TREE for build runable program for PRU
 
@@ -77,9 +79,9 @@ The fallowing command build *build/test.out* file in debug version.
 
     ../compiler/bin/clpru --define=am3358 --define=pru0 -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --hardware_mac=on -z -m"test.map"  --heap_size=0x100 --stack_size=0x100 -i"../compiler/lib" -i"../compiler/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "../compiler/pru/include/AM335x_PRU.cmd"  -llibc.a 
 
-test.out - is name of output file, it can be changed
+*test.out* - is name of output file, it can be changed
 
-main.obj - is name of file after compiling of main.c file
+*main.obj* - is name of file after compiling of main.c file
 
 ## Flashing from PC to BB-PRU
 **WARNING:** These instructions are created for FleX-d platform and may be required by another method the flashing on other distributions (Debian,...).
