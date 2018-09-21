@@ -63,7 +63,7 @@ The main compiler for PRU is clpru in *compiler/bin/clpru*. All information abou
     cd path_PRU_Build
     compiler/bin/clpru 
     
-The fallowing command compile *pru_code/main.c* file in debug version.
+The following command compile *pru_code/main.c* file in debug version.
 
 **NOTE:** It is neccessary run this command from */PRU_Build/build/* directory.
 
@@ -73,7 +73,7 @@ The fallowing command compile *pru_code/main.c* file in debug version.
 ## Building .obj file to .out file for PRU
 **NOTE:** This command is needed, if it was only compiled C-code and it created *.obj* file
 
-The fallowing command build *build/test.out* file in debug version.
+The following command build *build/test.out* file in debug version.
 
 **NOTE:** It is neccessary run this command from *PRU_Build/build/* directory.
 
